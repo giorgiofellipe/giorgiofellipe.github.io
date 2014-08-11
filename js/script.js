@@ -8,7 +8,13 @@ $(document).ready(function(){
 		$('html, body').animate({ scrollTop: scrollTo - 50 }, "slow");
 	});
 
-		// Animations
+	// Slides
+	$('#slides').superslides({
+		animation: 'fade',
+		play: 5000
+	});
+	
+	// Animations
 	var windowH = $(window).height();
 
 	$(window).bind('resize', function () {
@@ -17,13 +23,12 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
 		// Fixed Navbar
-		if(window.pageYOffset > windowH)
-		{
+		if(window.pageYOffset > windowH) {
 			$('.navbar-flat').addClass('navbar-fixed-top');
-			$('.firstSec').addClass('fixed');
+			$('#about').addClass('fixed');
 		} else {
 			$('.navbar-flat').removeClass('navbar-fixed-top');
-			$('.firstSec').removeClass('fixed');
+			$('#about').removeClass('fixed');
 		}
 	});
 });
