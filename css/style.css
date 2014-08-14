@@ -57,7 +57,7 @@ img { max-width: 100%; height: auto; }
    |        ABOUT        |
     ---------------------  */
 section.me { background: #F16272; color: white; padding: 70px 0;}
-section.fixed {  }
+section.fixed { padding: 120px 0; }
 section.me h1 { color: #00A5E7; /*-webkit-text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5); -moz-text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5); -o-text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5); -ms-text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5); text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.5); */}
 section.me .borderBtn {margin: 20px 0;}
 
