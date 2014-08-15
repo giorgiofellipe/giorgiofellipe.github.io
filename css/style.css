@@ -62,6 +62,55 @@ section.me h1 { color: #00A5E7; /*-webkit-text-shadow: 0px 2px 5px rgba(255, 255
 section.me .borderBtn {margin: 20px 0;}
 
 /*  ---------------------
+   |       SKILLS        |
+    ---------------------  */
+section.skills { background: #F7F6F6; }
+section.skills h2, section.skills h4 { color: #00A5E7 !important; }
+
+.skill { margin: 0 auto 20px auto; float: none; text-align: center; }
+
+.pie-graph { position: relative; width: 150px; height: 150px; display: inline-block; margin: 0 0 25px 0px; text-align: center; }
+.pie-graph canvas { position: absolute; left: 0px; top: 0px; }
+.pie-graph .percent { font-family: "Lato", sans-serif; color: black; line-height: 152px; display: inline-block; font-size: 35px; }
+.pie-graph .percent:after { content: '%'; }
+
+/*  ---------------------
+   |     EXPERIENCE      |
+    ---------------------  */
+section.experience {background: #F16272;}
+section.experience h2 {color: #F7F6F6;}
+.experience-line { float: left; width: 100%; padding: 50px 0 42px 0px;  }
+.experience-line ul { float: left; width: 100%; }
+.experience-line li { float: left; width: 50%; position: relative; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 0 ")"; filter: alpha(opacity=0); opacity: 0; }
+.experience-line .point { width: 57px; height: 57px; position: absolute; right: -28px; top: 4px; }
+.experience-line .bubble-arrow { width: 16px; height: 25px; position: absolute; top: 20px; right: -10px; }
+.experience-line .bubble { color: #363b3f; float: right; width: 64.4%; margin: 0px 30px 0 0px; padding: 22px 32px 25px 30px; background: #F7F6F6; position: relative; -webkit-border-radius: 6px; -moz-border-radius: 6px; -ms-border-radius: 6px; -o-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1); -moz-box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1); -o-box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1); -ms-box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1); box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.1); -webkit-transition: all 0.2s linear, 1s; -moz-transition: all 0.2s linear, 1s; -o-transition: all 0.2s linear, 1s; -ms-transition: all 0.2s linear, 1s; transition: all 0.2s linear, 1s; }
+.experience-line .bubble:hover { background: #00A5E7; color: #F7F6F6 !important; -webkit-transform: scale(1.05, 1.05); -moz-transform: scale(1.05, 1.05); -o-transform: scale(1.05, 1.05); -ms-transform: scale(1.05, 1.05); transform: scale(1.05, 1.05); }
+.experience-line .bubble p { font-family: "Lato", sans-serif; font-size: 14px; line-height: 1.3; font-weight: 400; margin: 0px; text-align: left; margin: 0 0 15px 0px; }
+.experience-line .bubble p.name { font-size: 20px; font-weight: 700; margin: 0px; }
+.experience-line .bubble p.title { font-size: 14px; font-weight: 400; margin: 0px; }
+.experience-line .inverse { margin: 80px 0 0 0; }
+.experience-line .inverse .bubble-arrow { left: -10px; right: auto; background-position: right top; }
+.experience-line .inverse .bubble { margin: 0px 0px 0 30px; }
+.experience-line .inverse .point { left: -29px; }
+.experience-line .inverse .timestamp { float: left; }
+.experience-line .inverse .timestamp p.date, .experience-line .inverse .timestamp p.time { text-align: left; margin: 0 0 0 50px; }
+.experience-line .inverse .timestamp p.date { margin-top: 10px; }
+.experience-line .inverse .bubble { float: left; }
+.experience-line .inverse .bubble img { left: auto; right: -34px; }
+.experience-line li:nth-child(1) { animation-delay: 0.2s; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; -o-animation-delay: 0.2s; -ms-animation-delay: 0.2s; }
+.experience-line li:nth-child(2) { animation-delay: 0.4s; -webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; -o-animation-delay: 0.4s; -ms-animation-delay: 0.4s; }
+.experience-line li:nth-child(3) { animation-delay: 0.8s; -webkit-animation-delay: 0.8s; -moz-animation-delay: 0.8s; -o-animation-delay: 0.8s; -ms-animation-delay: 0.8s; }
+.experience-line li:nth-child(4) { animation-delay: 1s; -webkit-animation-delay: 1s; -moz-animation-delay: 1s; -o-animation-delay: 1s; -ms-animation-delay: 1s; }
+.experience-line li:nth-child(5) { animation-delay: 1.2s; -webkit-animation-delay: 1.2s; -moz-animation-delay: 1.2s; -o-animation-delay: 1.2s; -ms-animation-delay: 1.2s; }
+.experience-line li:nth-child(6) { animation-delay: 1.4s; -webkit-animation-delay: 1.4s; -moz-animation-delay: 1.4s; -o-animation-delay: 1.4s; -ms-animation-delay: 1.4s; }
+.experience-line li:nth-child(7) { animation-delay: 1.6s; -webkit-animation-delay: 1.6s; -moz-animation-delay: 1.6s; -o-animation-delay: 1.6s; -ms-animation-delay: 1.6s; }
+.experience-line li:nth-child(8) { animation-delay: 1.8s; -webkit-animation-delay: 1.8s; -moz-animation-delay: 1.8s; -o-animation-delay: 1.8s; -ms-animation-delay: 1.8s; }
+.experience-line li:nth-child(9) { animation-delay: 2s; -webkit-animation-delay: 2s; -moz-animation-delay: 2s; -o-animation-delay: 2s; -ms-animation-delay: 2s; }
+.experience-line li:nth-child(10) { animation-delay: 2.2s; -webkit-animation-delay: 2.2s; -moz-animation-delay: 2.2s; -o-animation-delay: 2.2s; -ms-animation-delay: 2.2s; }
+
+
+/*  ---------------------
    |         PLUS        |
     ---------------------  */
 input, textarea { -webkit-appearance: none; }
@@ -86,4 +135,10 @@ input, textarea { -webkit-appearance: none; }
 @media only screen and (max-width: 765px) { 
 	.navbar-brand { display: block !important; }
 	.navbar-flat li { display: inline; }
+	.experience-line { background-position: 38px top; }
+	.experience-line li, .experience-line .odd { margin: 0px 0 20px 43px; width: 85%; }
+	.experience-line .point, .experience-line .odd .point { left: -32px; right: auto; }
+	.experience-line .timestamp, .experience-line .bubble { float: left; }
+	.experience-line .bubble, .experience-line .odd .bubble { margin: 0px 0 0 30px; width: 80%; padding: 22px 30px 25px 32px; }
+	.experience-line .bubble-arrow { background-position: right top; left: -10px; right: auto; }
 }
