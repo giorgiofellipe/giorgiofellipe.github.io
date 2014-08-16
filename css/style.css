@@ -161,8 +161,8 @@ section.experience h2 {color: #F7F6F6;}
   border: 2px solid #fff;
 }
 .social-icon li a:hover {
-  background-color: #fff;
-  color: #00aeef;
+  background-color: #F7F6F6;
+  color: #F16272;
 }
 @media screen and (max-width: 480px) {
   .social-icon {
