@@ -27,6 +27,7 @@
 			//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 			//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
 			$('#home').parallax("", 0.2);
+			$('#social-network').parallax("75%", 0.5);
 		})
 	</script>
 </head>
@@ -62,7 +63,6 @@
 						<li><a href="#about" class="scrollto">SOBRE</a></li>
 						<li><a href="#skills" class="scrollto">SKILLS</a></li>
 						<li><a href="#experience" class="scrollto">EXPERIÊNCIAS</a></li>
-						<li><a href="#contact" class="scrollto">CONTATO</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -86,22 +86,22 @@
 		</div>
 		<ul class="list-inline social-icon">
 			<li class="animated" data-wow-delay='0.3s'>
-				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook">
+				<a href="https://facebook.com/giorgiofellipe" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Facebook">
 					<i class="fa fa-facebook"></i>
 				</a>
 			</li>
 			<li class="animated" data-wow-delay='0.3s'>
-				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter">
+				<a href="https://twitter.com/giiorgio_" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Twitter">
 					<i class="fa fa-twitter"></i>
 				</a>
 			</li>
 			<li class="animated" data-wow-delay='0.3s'>
-				<a href="#" data-toggle="tooltip" data-placement="bottom" title="LinkedIn">
+				<a href="https://www.linkedin.com/profile/view?id=201944416" target="_blank" data-toggle="tooltip" data-placement="bottom" title="LinkedIn">
 					<i class="fa fa-linkedin"></i>
 				</a>
 			</li>
 			<li class="animated" data-wow-delay='0.3s'>
-				<a href="#" data-toggle="tooltip" data-placement="bottom" title="GitHub">
+				<a href="https://github.com/giorgiofellipe" target="_blank" data-toggle="tooltip" data-placement="bottom" title="GitHub">
 					<i class="fa fa-github"></i>
 				</a>
 			</li>
@@ -120,12 +120,12 @@
 				</span>
 				<h4>PHP</h4>
 			</div>
-			<div class="skill">
+			<!-- <div class="skill">
 				<span class="pie-graph" data-percent="80">
 					<span class="percent"></span>
 				</span>
 				<h4>JAVASCRIPT</h4>
-			</div>
+			</div> -->
 			<div class="skill">
 				<span class="pie-graph" data-percent="85">
 					<span class="percent"></span>
@@ -144,12 +144,12 @@
 				</span>
 				<h4>SQL</h4>
 			</div>
-			<div class="skill">
+			<!-- <div class="skill">
 				<span class="pie-graph" data-percent="75">
 					<span class="percent"></span>
 				</span>
 				<h4>CSS</h4>
-			</div>
+			</div> -->
 			<div class="skill">
 				<span class="pie-graph" data-percent="50">
 					<span class="percent"></span>
@@ -168,7 +168,6 @@
 			<div class="experience-line">
 				<ul>
 					<li class="animated">
-						<div class="point"></div>
 						<div class="bubble">
 							<div class="bubble-arrow"></div>
 							<p class="date">Desde Set. 2013 (Atual)</p>
@@ -177,7 +176,6 @@
 						</div>
 					</li>
 					<li class="animated inverse">
-						<div class="point"></div>
 						<div class="bubble">
 							<div class="bubble-arrow"></div>
 							<p class="date">Desde Fevereiro 2012 (Atual)</p>
@@ -186,7 +184,6 @@
 						</div>
 					</li>
 					<li class="animated">
-						<div class="point"></div>
 						<div class="bubble">
 							<div class="bubble-arrow"></div>
 							<p class="date">De Setembro 2011 a Fevereiro 2012</p>
@@ -195,7 +192,6 @@
 						</div>
 					</li>
 					<li class="animated inverse">
-						<div class="point"></div>
 						<div class="bubble">
 							<div class="bubble-arrow"></div>
 							<p class="date">De Julho 2011 a Setembro 2011</p>
@@ -208,7 +204,8 @@
 		</div>
 	</section>
 
-	<section id="contact" class="section">
+	<section id="footer" class="footer section colored">
+		<p>&copy; 2014 Giorgio Fellipe. All Rights Reserved.</p>
 	</section>
 
 	<script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
