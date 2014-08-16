@@ -111,6 +111,71 @@ section.experience h2 {color: #F7F6F6;}
 
 
 /*  ---------------------
+   |       SOCIAL        |
+    ---------------------  */
+#social-network {
+  background:url(../images/city.jpg) 80% no-repeat fixed;
+  height: 350px;
+  text-align: center;
+}
+#social-network h2 {
+  font-size: 3em;
+  margin: 45px 0;
+}
+@media screen and (max-width: 480px) {
+  #social-network h2 {
+    font-size: 2em;
+  }
+}
+
+.social-icon li {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 30px;
+}
+.social-icon li a {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+  display: block;
+  width: 60px;
+  height: 60px;
+  font-size: 33px;
+  line-height: 57px;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.social-icon li a:hover {
+  background-color: #fff;
+  color: #00aeef;
+}
+@media screen and (max-width: 480px) {
+  .social-icon {
+    width: 100%;
+    text-align: center;
+  }
+  .social-icon li {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/*  ---------------------
    |         PLUS        |
     ---------------------  */
 input, textarea { -webkit-appearance: none; }

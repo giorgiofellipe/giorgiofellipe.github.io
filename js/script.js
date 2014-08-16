@@ -31,6 +31,7 @@ $(document).ready(function(){
 		windowH = $(window).height();
 	});
 	
+	var socialTopOffset = $('.social-network').offset().top;
 	var skillsTopOffset = $('.skills').offset().top;
 	var timelineTopOffset = $('.experience-line').offset().top;
 	$(window).scroll(function(){
@@ -59,6 +60,10 @@ $(document).ready(function(){
 
 		if(window.pageYOffset > timelineTopOffset-windowH+200) {
 			$('.experience-line li').addClass('fadeInUp');
+		}
+
+		if(window.pageYOffset > socialTopOffset-windowH+200) {
+			$('.social-network li').addClass('fadeInUp');
 		}
 	});
 
