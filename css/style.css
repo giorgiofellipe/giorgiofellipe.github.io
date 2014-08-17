@@ -53,7 +53,7 @@ img { max-width: 100%; height: auto; }
 /*  ---------------------
    |        ABOUT        |
     ---------------------  */
-section.me { background: #F16272; color: white; padding: 70px 0; }
+section.me { background: #F16272; color: #f7f8f8; padding: 70px 0; }
 section.fixed { padding: 120px 0; }
 section.me h1 { color: #00A5E7; }
 section.me .borderBtn {margin: 20px 0;}
