@@ -34,7 +34,7 @@ img { max-width: 100%; height: auto; }
 .welcome-message .heading { padding: 18px 0px; }
 .welcome-message p { font-family: "Lato", sans-serif; font-size: 55px; color: white; -webkit-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); -moz-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); -o-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); -ms-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); }
 .welcome-message p.small { font-family: "Lato", sans-serif; font-size: 24px; color: white; }
-.welcome-message .borderBtn, .welcome-message .contactform button, .contactform .welcome-message button { margin: 10px 0; -webkit-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); -moz-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); -o-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); -ms-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); }
+.welcome-message .borderBtn, .welcome-message .contactform button, .contactform .welcome-message button { margin: 5px 0; -webkit-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); -moz-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); -o-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); -ms-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); }
 .welcome-message .borderBtn:hover, .welcome-message .contactform button:hover, .contactform .welcome-message button:hover { -webkit-text-shadow: 0px 2px 5px transparent; -moz-text-shadow: 0px 2px 5px transparent; -o-text-shadow: 0px 2px 5px transparent; -ms-text-shadow: 0px 2px 5px transparent; text-shadow: 0px 2px 5px transparent; }
 
 /*  ---------------------
@@ -74,7 +74,7 @@ section.skills h2, section.skills h4 { color: #00A5E7 !important; }
 /*  ---------------------
    |     EXPERIENCE      |
     ---------------------  */
-section.experience {background: #F16272; height: 750px;}
+section.experience {background: #F16272; height: 700px;}
 section.experience h2 {color: #F7F6F6;}
 .experience-line { float: left; width: 100%; padding: 50px 0 42px 0px;  }
 .experience-line ul { float: left; width: 100%; }
@@ -108,8 +108,8 @@ section.experience h2 {color: #F7F6F6;}
 /*  ---------------------
    |       SOCIAL        |
     ---------------------  */
-#social-network {background:url(../images/city.jpg) no-repeat fixed; height: 350px; text-align: center; } 
-#social-network h2 {font-size: 3em; margin: 45px 0; } 
+#social-network {background:url(../images/city.jpg) 0 no-repeat fixed; height: 350px; text-align: center;} 
+#social-network h2 {font-size: 3em; margin: 45px 0; color: #F7F6F6;} 
 @media screen and (max-width: 480px) {
   #social-network h2 {font-size: 2em; }
 }
@@ -153,7 +153,7 @@ input, textarea { -webkit-appearance: none; }
 @media only screen and (max-width: 765px) { 
 	.navbar-brand { display: block !important; }
 	.navbar-flat li { display: inline; }
-	section.experience {height: 900px;}
+	section.experience {height: 950px;}
 	.experience-line { background-position: 38px top;}
 	.experience-line li, .experience-line .inverse { margin: 0px 0 20px 43px; width: 85%; }
 	.experience-line .point, .experience-line .inverse .point { left: -32px; right: auto; }
