@@ -109,7 +109,7 @@ section.experience h2 {color: #F7F6F6;}
    |       SOCIAL        |
     ---------------------  */
 #social-network {background:url(../images/city.jpg) 0 no-repeat fixed; height: 350px; text-align: center;} 
-#social-network h2 {font-size: 3em; margin: 45px 0; color: #F7F6F6;} 
+#social-network h2 {font-size: 3em; margin: 45px 0; color: #F16272;} 
 @media screen and (max-width: 480px) {
   #social-network h2 {font-size: 2em; }
 }
