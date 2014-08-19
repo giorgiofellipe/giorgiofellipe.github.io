@@ -29,7 +29,7 @@ img { max-width: 100%; height: auto; }
 /*  ---------------------
    |         HOME        |
     ---------------------  */
-#home {background:url(../images/2.jpg) 50% no-repeat fixed; color: white; height: auto; margin: 0 auto; padding: 0; }
+#home {background:url(../images/2L.jpg) 50% no-repeat fixed; color: white; height: auto; margin: 0 auto; padding: 0; }
 .welcome-message { position: absolute; width: 100%; height: auto; top: 50%; margin-top: -125px; z-index: 10; text-align: center; }
 .welcome-message .heading { padding: 18px 0px; }
 .welcome-message p { font-family: "Lato", sans-serif; font-size: 55px; color: white; -webkit-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); -moz-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); -o-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); -ms-text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4); }
@@ -108,7 +108,7 @@ section.experience h2 {color: #F7F6F6;}
 /*  ---------------------
    |       SOCIAL        |
     ---------------------  */
-#social-network {background:url(../images/city.jpg) 0 no-repeat fixed; height: 350px; text-align: center;} 
+#social-network {background:url(../images/city.jpg) 0 no-repeat; height: 350px; text-align: center;} 
 #social-network h2 {font-size: 3em; margin: 45px 0; color: #F16272;} 
 @media screen and (max-width: 480px) {
   #social-network h2 {font-size: 2em; }
@@ -160,4 +160,7 @@ input, textarea { -webkit-appearance: none; }
 	.experience-line .timestamp, .experience-line .bubble { float: left; }
 	.experience-line .bubble, .experience-line .inverse .bubble { margin: 0px 0 0 30px; width: 80%; padding: 22px 30px 25px 32px; }
 	.experience-line .bubble-arrow { background-position: right top; left: -10px; right: auto; }
+}
+@media only screen and (max-width: 1700px) {
+	#home {background:url(../images/2.jpg) 50% no-repeat fixed;}
 }
