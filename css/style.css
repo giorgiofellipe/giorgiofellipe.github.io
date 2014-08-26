@@ -149,7 +149,7 @@ input, textarea { -webkit-appearance: none; }
 @media only screen and (max-width: 768px) { 
 	.navbar-flat li { display: inline-block; } 
 	.section .profilePic { max-width: 100%; } 
-	#social-network { height: 400px !important; } 
+	#social-network { height: 420px !important; } 
 }
 @media only screen and (max-width: 765px) { 
 	.navbar-brand { display: block !important; }
