@@ -1,5 +1,18 @@
 $(document).ready(function(){
 	'use strict';
+
+	$('#nav').localScroll(1000);
+			
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#home').parallax("50%", 1.5);
+	if ($(window).width() > 760) {
+		$('#social-network').parallax("75%", 0.5);
+	}
+
+	
 	// Scroll
 	$('.scrollto').click(function(e){
 		e.preventDefault();
@@ -67,4 +80,35 @@ $(document).ready(function(){
 		}
 	});
 
+});
+
+$(function(){	
+
+    var $window = $(window);
+	var scrollTime = 0.3;
+	var scrollDistance = 50;
+
+	var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+	var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+	is_safari = !(is_chrome && is_safari);
+
+//  Unfortunately this won't work properly on safari with trackpad, it keeps the screen flickering
+	if (!is_safari) {
+		$window.on("mousewheel DOMMouseScroll", function(event){
+
+			event.preventDefault();	
+
+			var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+			var scrollTop = $window.scrollTop();
+			var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+
+			TweenMax.to($window, scrollTime, {
+				scrollTo : { y: finalScroll, autoKill:true },
+					ease: Power1.easeOut,
+					autoKill: true,
+					overwrite: 5							
+				});
+
+		});
+	}
 });
