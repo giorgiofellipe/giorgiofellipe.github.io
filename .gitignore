@@ -1,2 +1,6 @@
 .DS_Store
-sender.php
+*.sublime-project
+*.sublime-workspace
+*.bkp
+*.map
+*.scssc
