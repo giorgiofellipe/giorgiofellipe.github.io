@@ -278,9 +278,9 @@ img {
 
 	.navbar-collapse { 
 		text-align: center; 
-		.icon-bar { 
-			background: $white; 
-		}
+	}
+	.navbar-toggle .icon-bar { 
+		background: $white; 
 	}
 	ul { 
 		float: none; 

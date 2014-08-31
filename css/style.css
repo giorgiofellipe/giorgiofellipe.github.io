@@ -180,8 +180,8 @@ img {
   border-radius: 0px; }
   .navbar-flat .navbar-collapse {
     text-align: center; }
-    .navbar-flat .navbar-collapse .icon-bar {
-      background: #ffffff; }
+  .navbar-flat .navbar-toggle .icon-bar {
+    background: #ffffff; }
   .navbar-flat ul {
     float: none; }
   .navbar-flat li {
