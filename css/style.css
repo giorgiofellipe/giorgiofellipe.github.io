@@ -107,8 +107,7 @@ img {
     font-size: 15px;
     line-height: 24px; }
   .section .heading {
-    text-align: center;
-    padding-bottom: 40px; }
+    text-align: center; }
   .section .profilePic {
     text-align: center;
     margin: 0 auto;
@@ -216,6 +215,8 @@ section.me {
     color: #00A5E7; }
   section.me .borderBtn {
     margin: 0; }
+  section.me .downloadCv {
+    margin: 20px 0; }
 
 /*  ---------------------
    |       SKILLS        |
