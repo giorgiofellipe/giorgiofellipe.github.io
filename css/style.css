@@ -33,7 +33,7 @@ section .centered {
 section.colored h1, section.colored h2, section.colored h3, section.colored h4, section.colored p {
   color: #ffffff; }
 section.fixed {
-  padding: 120px 0 !important; }
+  padding: 70px 0 !important; }
 
 .btn, .filter a {
   font-family: "Lato", sans-serif;
@@ -211,7 +211,7 @@ img {
 section.me {
   background: #F16272;
   color: #F7F6F6;
-  padding: 70px 0; }
+  padding: 20px 0; }
   section.me h1 {
     color: #00A5E7; }
   section.me .borderBtn {
