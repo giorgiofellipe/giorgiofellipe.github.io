@@ -385,10 +385,17 @@ section.me {
 	.what-im-studying {
 		width: 100%; 
 		text-align: center; 
+		margin-left: 5px; 
+		ul {
+			margin-left: 10px;
+		}
 		li {
 			margin-left: 3px; 
 			margin-right: 3px; 
 		}
+	}
+	.swift-logo {
+		margin-left: 3px;
 	}
 }
 

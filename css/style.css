@@ -257,10 +257,16 @@ section.me {
 @media screen and (max-width: 480px) {
   .what-im-studying {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    margin-left: 5px; }
+    .what-im-studying ul {
+      margin-left: 10px; }
     .what-im-studying li {
       margin-left: 3px;
-      margin-right: 3px; } }
+      margin-right: 3px; }
+
+  .swift-logo {
+    margin-left: 3px; } }
 .coloredImg {
   -webkit-transition: all 0.8s linear, 1s;
   -moz-transition: all 0.8s linear, 1s;
