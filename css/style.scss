@@ -110,6 +110,17 @@ $lightGrey: #b6b7b7;
 	transition-timing-function: $value; 
 }
 
+@mixin gray($value) {
+	@if $value {
+		filter: gray; /* IE6-9 */
+	    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+	    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    } @else {
+	    filter: none;
+	    -webkit-filter: grayscale(0);
+	}
+}
+
 /*  ---------------------
    |      GENERAL        |
     ---------------------  */
@@ -383,47 +394,30 @@ section.me {
 
 //Grayscale Images -> From: http://www.hatanaka.com.br/info/artigo/css/como-deixar-imagem-cinza-css-grayscale.php
 .coloredImg {
-    -webkit-transition: all 0.8s linear;
-    -moz-transition: all 0.8s linear;
-    transition: all 0.8s linear;
-    // filter: url("data:image/svg+xml;utf8,<svg xmlns="\'http://www.w3.org/2000/svg\'"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="\'0.3333" 0.3333="" 0="" 1="" 0\'=""></feColorMatrix></filter></svg>#grayscale"); /* Firefox 3.5+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(100%);
-     
+	@include animate(0.8s, linear, 1s);
+    @include gray(true);
 }
  
 .coloredImg:hover{
-    filter: none;
-    -webkit-filter: grayscale(0);
-    -webkit-transition: all 0.8s linear;
-    -moz-transition: all 0.8s linear;
-    transition: all 0.8s linear;
+    @include gray(false);
+    @include animate(0.8s, linear, 1s);
 }
  
 .grayscaleImg{
-    filter: none;
-    -webkit-filter: grayscale(0);
-    -webkit-transition: all 0.8s linear;
-    -moz-transition: all 0.8s linear;
-    transition: all 0.8s linear;
+	@include gray(false);
+    @include animate(0.8s, linear, 1s);
 }
  
 .grayscaleImg:hover{
-    -webkit-transition: all 0.8s linear;
-    -moz-transition: all 0.8s linear;
-    transition: all 0.8s linear;
-    // filter: url("data:image/svg+xml;utf8,<svg xmlns="\'http://www.w3.org/2000/svg\'"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="\'0.3333" 0.3333="" 0="" 1="" 0\'=""></feColorMatrix></filter></svg>#grayscale"); /* Firefox 3.5+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+	@include gray(true);
+	@include animate(0.8s, linear, 1s);
 }
 
 /*  ---------------------
    |      THINKABOUT     |
     ---------------------  */
 .thinkabout {
-	background: $oldPink;
 	.divider {
-		background: $glacialWhite;
 	}
 }
 /*  ---------------------
