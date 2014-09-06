@@ -1,6 +1,10 @@
 $(document).ready(function(){
 	'use strict';
 
+	$('.nav a').on('click', function(){
+	    $(".navbar-toggle").click();
+	});
+
 	$('#nav').localScroll(1000);
 			
 	//.parallax(xPosition, speedFactor, outerHeight) options:
@@ -9,7 +13,7 @@ $(document).ready(function(){
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
 	$('#home').parallax("50%", 1.5);
 	if ($(window).width() > 760) {
-		$('#social-network').parallax("75%", 0.5);
+		$('#social-network').parallax("100%", 0.7);
 	}
 
 	
