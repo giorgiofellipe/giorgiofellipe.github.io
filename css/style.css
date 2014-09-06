@@ -354,6 +354,8 @@ section.experience {
   height: 700px; }
   section.experience h2 {
     color: #F7F6F6; }
+  section.experience .divider {
+    background: #F7F6F6; }
 
 .experience-line {
   float: left;
