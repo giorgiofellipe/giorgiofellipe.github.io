@@ -219,6 +219,88 @@ section.me {
     margin: 20px 0; }
 
 /*  ---------------------
+   |       STUDYING      |
+    ---------------------  */
+.studying {
+  background: #F7F6F6; }
+  .studying h2, .studying h4 {
+    color: #00A5E7 !important; }
+
+.what-im-studying {
+  text-align: center; }
+  .what-im-studying li {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 30px; }
+    .what-im-studying li a {
+      display: block;
+      width: 110px;
+      height: 110px;
+      font-size: 33px;
+      line-height: 57px;
+      text-align: center;
+      width: 100px;
+      height: 100px; }
+      .what-im-studying li a img {
+        height: 100%; }
+
+.swift-logo {
+  margin-left: 25px;
+  max-height: 80px;
+  padding-top: 15px; }
+
+.angular-logo {
+  margin-left: 5px;
+  max-height: 80px;
+  padding-top: 15px; }
+
+@media screen and (max-width: 480px) {
+  .what-im-studying {
+    width: 100%;
+    text-align: center; }
+    .what-im-studying li {
+      margin-left: 3px;
+      margin-right: 3px; } }
+.coloredImg {
+  -webkit-transition: all 0.8s linear;
+  -moz-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%); }
+
+.coloredImg:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transition: all 0.8s linear;
+  -moz-transition: all 0.8s linear;
+  transition: all 0.8s linear; }
+
+.grayscaleImg {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transition: all 0.8s linear;
+  -moz-transition: all 0.8s linear;
+  transition: all 0.8s linear; }
+
+.grayscaleImg:hover {
+  -webkit-transition: all 0.8s linear;
+  -moz-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+, Safari 6+, Safari 6+ iOS */ }
+
+/*  ---------------------
+   |      THINKABOUT     |
+    ---------------------  */
+.thinkabout {
+  background: #F16272; }
+  .thinkabout .divider {
+    background: #F7F6F6; }
+
+/*  ---------------------
    |       SKILLS        |
     ---------------------  */
 .skills {
