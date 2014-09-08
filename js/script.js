@@ -13,7 +13,7 @@ $(document).ready(function(){
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
 	$('#home').parallax("50%", 1.5);
 	if ($(window).width() > 760) {
-		$('#social-network').parallax("100%", 0.7);
+		$('#social-network').parallax("100%", 0.5);
 	}
 
 	
