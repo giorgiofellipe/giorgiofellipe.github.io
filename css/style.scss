@@ -238,12 +238,17 @@ img {
    |         HOME        |
     ---------------------  */
 #home {
-	background:url(../images/2L.jpg) 50% no-repeat fixed; 
+	background:url(../images/2.jpg) 50% no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	color: $white; 
 	height: auto; 
 	margin: 0 auto; 
 	padding: 0; 
 }
+
 .welcome-message { 
 	position: absolute; 
 	width: 100%; 
@@ -738,10 +743,5 @@ input, textarea {
 			left: -10px; 
 			right: auto; 
 		}
-	}
-}
-@media only screen and (max-width: 1700px) {
-	#home {
-		background:url(../images/2.jpg) 50% no-repeat fixed;
 	}
 }

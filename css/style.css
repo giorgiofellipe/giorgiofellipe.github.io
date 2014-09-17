@@ -123,7 +123,11 @@ img {
    |         HOME        |
     ---------------------  */
 #home {
-  background: url(../images/2L.jpg) 50% no-repeat fixed;
+  background: url(../images/2.jpg) 50% no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #ffffff;
   height: auto;
   margin: 0 auto;
@@ -669,8 +673,5 @@ input, textarea {
       background-position: right top;
       left: -10px;
       right: auto; } }
-@media only screen and (max-width: 1700px) {
-  #home {
-    background: url(../images/2.jpg) 50% no-repeat fixed; } }
 
 /*# sourceMappingURL=style.css.map */

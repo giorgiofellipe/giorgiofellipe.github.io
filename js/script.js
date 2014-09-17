@@ -83,7 +83,7 @@ $(document).ready(function(){
 			$('.social-network li').addClass('fadeInUp');
 		}
 	});
-
+	
 });
 
 $(function(){	
