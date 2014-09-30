@@ -610,12 +610,13 @@ section.experience {
    |       SOCIAL        |
     ---------------------  */
 #social-network {
-	background:url(../images/city.jpg) 0 no-repeat; height: 350px; 
+	background:url(../images/city.jpg) 0 no-repeat; 
+	height: 350px; 
 	text-align: center;
 	h2 {
 		font-size: 3em; 
 		margin: 45px 0; 
-		color: $oldPink;
+		color: $glacialWhite;
 	}
 } 
 @media screen and (max-width: 480px) {
