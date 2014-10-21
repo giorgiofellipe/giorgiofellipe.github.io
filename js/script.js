@@ -53,7 +53,7 @@ $(document).ready(function(){
 	var timelineTopOffset = $('.experience-line').offset().top;
 	$(window).scroll(function(){
 		// Fixed Navbar
-		if(window.pageYOffset > windowH+3) {
+		if((window.pageYOffset > windowH+3) || (window.pageYOffset > 610)) {
 			$('.navbar-flat').addClass('navbar-fixed-top');
 			$('#about').addClass('fixed');
 		} else {
