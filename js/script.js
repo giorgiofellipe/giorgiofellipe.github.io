@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){	
 	'use strict';
 
 	$('.nav a').on('click', function(){
@@ -11,7 +11,8 @@ $(document).ready(function(){
 	//xPosition - Horizontal position of the element
 	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	$('#home').parallax("50%", 1.5);
+	
+	// $('#home').parallax("50%", 1.5);
 	if ($(window).width() > 760) {
 		$('#social-network').parallax("100%", 0.5);
 	}
@@ -53,7 +54,7 @@ $(document).ready(function(){
 	var timelineTopOffset = $('.experience-line').offset().top;
 	$(window).scroll(function(){
 		// Fixed Navbar
-		if((window.pageYOffset > windowH+3) || (window.pageYOffset > 610)) {
+		if (window.pageYOffset > windowH+3) {
 			$('.navbar-flat').addClass('navbar-fixed-top');
 			$('#about').addClass('fixed');
 		} else {
@@ -84,10 +85,6 @@ $(document).ready(function(){
 		}
 	});
 	
-});
-
-$(function(){	
-
     var $window = $(window);
 	var scrollTime = 0.3;
 	var scrollDistance = 50;
