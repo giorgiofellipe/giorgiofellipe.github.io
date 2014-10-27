@@ -160,12 +160,6 @@ section {
 	}
 }
 
-// .btn:hover, .filter a:hover, .btn:focus, .filter a:focus { 
-// 	background-color: #00A5E7; 
-// 	border-color: #00A5E7; 
-// 	color: white; 
-// }
-
 .borderBtn, .contactform button { 
 	font-family: $customFont; 
 	font-weight: 700; 
@@ -289,7 +283,6 @@ img {
 	background: $babyBlue; 
 	margin-bottom: 0px; 
 	@include border-radius(0px); 
-	// @include boxshadow(0px, 0px, 5px, 2px, rgba(0, 0, 0, 0.4)); 
 
 	.navbar-collapse { 
 		text-align: center; 
@@ -306,7 +299,7 @@ img {
 		a {
 			&:hover, &:focus {
 				background: $blue; 
-				color: $white; 
+				color: $white;
 			}
 		}
 		&.active a {
