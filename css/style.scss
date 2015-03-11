@@ -26,11 +26,11 @@ From left
 |_______________________| 
 -------------------------------------------------------------------*/
 
-$oldPink: #F16272;
+$primaryColor: #6bb9f0;
 $salmon: #FF555A;
 $glacialWhite: #F7F6F6;
-$babyBlue: #00A5E7;
-$blue: #009BD9;
+$secondaryColor: #1e8bc3;
+$thirdColor: #39495e;
 $white: #ffffff;
 $darkGrey: #363b3f;
 $lightGrey: #b6b7b7;
@@ -154,8 +154,8 @@ section {
 	padding: 18px; 
 	@include animate(0.3s, ease-in, 0s);
 	&:hover, &:focus{
-		background-color: $babyBlue; 
-		border-color: $babyBlue; 
+		background-color: $secondaryColor; 
+		border-color: $secondaryColor; 
 		color: $white; 
 	}
 }
@@ -173,7 +173,7 @@ section {
 	@include animate(0.3s, ease-in, 0s);
 	&:hover, &:focus{
 		background-color: $glacialWhite; 
-		color: $babyBlue; 
+		color: $secondaryColor; 
 		text-decoration: none; 
 	}
 }
@@ -202,7 +202,7 @@ img {
 	h1, h2, h3, h4 { 
 		font-family: $customFont; 
 		font-weight: 700; 
-		color: $babyBlue; 
+		color: $secondaryColor; 
 	}
 	p { 
 		font-family: $customFont; 
@@ -222,7 +222,7 @@ img {
 	.divider { 
 		width: 70%; 
 		height: 1px; 
-		background: $babyBlue; 
+		background: $secondaryColor; 
 		margin: 0 auto; 
 	}
 }
@@ -280,7 +280,7 @@ img {
    |         MENU        |
     ---------------------  */
 .navbar-flat {
-	background: $babyBlue; 
+	background: $secondaryColor; 
 	margin-bottom: 0px; 
 	@include border-radius(0px); 
 
@@ -298,12 +298,12 @@ img {
 		float: none; 
 		a {
 			&:hover, &:focus {
-				background: $blue; 
+				background: $thirdColor; 
 				color: $white;
 			}
 		}
 		&.active a {
-			background: $blue; 
+			background: $thirdColor; 
 			color: $white; 
 		}
 	}
@@ -316,17 +316,18 @@ img {
 	.navbar-brand { 
 		display: none; 
 	}
+	border: none;
 }
 
 /*  ---------------------
    |        ABOUT        |
     ---------------------  */
 section.me { 
-	background: $oldPink; 
+	background: $primaryColor; 
 	color: $glacialWhite; 
 	padding: 20px 0; 
 	h1 { 
-		color: $babyBlue; 
+		color: $secondaryColor; 
 	}
 	.borderBtn {
 		margin: 0;
@@ -343,7 +344,7 @@ section.me {
 .studying { 
 	background: $glacialWhite; 
 	h2, h4 { 
-		color: $babyBlue !important; 
+		color: $secondaryColor !important; 
 	}
 }
 .what-im-studying {
@@ -431,7 +432,7 @@ section.me {
 	background: $glacialWhite; 
 	@include boxshadow(0px, 0px, 5px, 2px, rgba(0, 0, 0, 0.4));
 	h2, h4 { 
-		color: $babyBlue !important; 
+		color: $secondaryColor !important; 
 	}
 }
 
@@ -471,7 +472,7 @@ section.me {
    |     EXPERIENCE      |
     ---------------------  */
 section.experience {
-	background: $oldPink; 
+	background: $primaryColor; 
 	height: 700px;
 	h2 {
 		color: $glacialWhite;
@@ -513,7 +514,7 @@ section.experience {
 		@include border-radius(6px); 
 		@include animate(0.2s, linear, 1s); 
 		&:hover { 
-			background: $babyBlue; 
+			background: $secondaryColor; 
 			color: $glacialWhite !important; 
 			@include scale(1.05, 1.05); 
 			@include boxshadow(3px, 3px, 3px, 2px, rgba(0, 0, 0, 0.2)); 
@@ -640,7 +641,7 @@ section.experience {
 			border: 2px solid $white; 
 			&:hover {
 				background-color: $glacialWhite; 
-				color: $oldPink; 
+				color: $primaryColor; 
 			}
 		}
 	}

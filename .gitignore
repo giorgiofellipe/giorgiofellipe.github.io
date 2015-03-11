@@ -5,3 +5,5 @@
 *.map
 *.scssc
 images_notoptimized
+
+*.codekit

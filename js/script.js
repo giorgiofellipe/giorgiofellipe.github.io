@@ -86,7 +86,7 @@ $(function(){
 	});
 	
     var $window = $(window);
-	var scrollTime = 0.3;
+	var scrollTime = 0;
 	var scrollDistance = 50;
 
 	var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
