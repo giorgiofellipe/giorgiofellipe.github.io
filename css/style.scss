@@ -375,6 +375,11 @@ section.me {
 	max-height: 80px;
 	padding-top: 15px;
 }
+.ionic-logo {
+	margin-left: 5px;
+	max-height: 80px;
+	padding-top: 15px;
+}
 
 @media screen and (max-width: 480px) {
 	.what-im-studying {
@@ -392,7 +397,8 @@ section.me {
 	.swift-logo {
 		margin-left: 3px;
 	}
-	.sass-logo {
+	.sass-logo,
+	.ionic-logo{
 		margin-left: 12px;
 	}
 }
